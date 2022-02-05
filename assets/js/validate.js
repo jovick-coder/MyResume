@@ -16,7 +16,7 @@ const handleSubmit = (event) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': event.target.getAttribute('name'),
+        MyResumeForm: event.target.getAttribute('name'),
         ...name,
       }),
     })
