@@ -51,6 +51,18 @@ form.addEventListener('submit', (e) => {
         }
       }
     })
-    .then(handleSubmit(e))
+    .then(() => {
+      if (checkArray.length !== 4) {
+        let myForm = document.getElementById('MyResumeForm')
+        let formData = new FormData(myForm)
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => console.log('Form successfully submitted'))
+          .catch((error) => alert(error))
+      }
+    })
   // .then(console.log(e))
 })
