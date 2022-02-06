@@ -1,4 +1,31 @@
 const form = document.querySelector('#MyResumeForm')
+const sentMessage = document.querySelector('.sent-message')
+const loading = document.querySelector('.loading')
+let checkArray = []
+
+const submitForm = () => {
+  console.log('working')
+  if (checkArray.length === 4) {
+    loading.style.display = 'block'
+
+    let formData = new FormData(form)
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        loading.style.display = 'none'
+
+        // formMessage.innerHTML = `text mess/age`
+        sentMessage.style.display = 'block'
+        console.log('Form successfully submitted')
+      })
+      .catch((error) => console.log(error))
+  } else {
+    console.log('make sure the form is filled')
+  }
+}
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   checkArray = []
@@ -37,17 +64,6 @@ form.addEventListener('submit', (e) => {
         }
       }
     })
-    .then(() => {
-      if (checkArray.length !== 4) {
-        let formData = new FormData(form)
-        fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(formData).toString(),
-        })
-          .then(() => console.log('Form successfully submitted'))
-          .catch((error) => alert(error))
-      }
-    })
+    .then(submitForm())
   // .then(console.log(e))
 })
