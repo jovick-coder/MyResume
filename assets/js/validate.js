@@ -5,7 +5,7 @@ let checkArray = []
 
 const submitForm = () => {
   console.log('working')
-  if (checkArray.length === 4) {
+  if (checkArray.length >= 4) {
     loading.style.display = 'block'
 
     let formData = new FormData(form)
@@ -17,7 +17,6 @@ const submitForm = () => {
       .then(() => {
         loading.style.display = 'none'
 
-        // formMessage.innerHTML = `text mess/age`
         sentMessage.style.display = 'block'
         console.log('Form successfully submitted')
       })
@@ -56,14 +55,11 @@ form.addEventListener('submit', (e) => {
             validate.append(textNode)
             validate.style.display = 'block'
           } else {
-            checkArray.push('success')
             // success
-            // console.log(inputElement.value, ', index ->', index)
-            // form.querySelector('#form-message').style.display = 'block'
+            checkArray.push('success')
           }
         }
       }
     })
     .then(submitForm())
-  // .then(console.log(e))
 })
