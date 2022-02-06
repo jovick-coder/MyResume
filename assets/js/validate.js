@@ -27,6 +27,8 @@ const submitForm = () => {
 }
 form.addEventListener('submit', (e) => {
   e.preventDefault()
+  sentMessage.style.display = 'none'
+
   checkArray = []
   let inputElementArray = [...e.srcElement]
   let validateElement = [...form.querySelectorAll('.validate')]
