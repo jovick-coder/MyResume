@@ -1,28 +1,16 @@
-let checkArray = []
-// netlify form data encode
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
 // Netlify form submittion
-
-const handleSubmit = (event) => {
-  event.preventDefault()
-  if (checkArray.length !== 4) {
-    console.log('fill all field')
-  } else {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        MyResumeForm: event.target.getAttribute('name'),
-        ...name,
-      }),
-    })
-      .then(() => navigate('/thank-you/'))
-      .catch((error) => alert(error))
-  }
+const handleSubmit = (e) => {
+  // e.preventDefault();
+  // let myForm = document.getElementById("pizzaOrder");
+  // console.log('herer')
+  let formData = new FormData(e)
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log('Form successfully submitted'))
+    .catch((error) => alert(error))
 }
 const form = document.querySelector('.email-form')
 form.addEventListener('submit', (e) => {
