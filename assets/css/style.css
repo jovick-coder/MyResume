@@ -716,7 +716,7 @@ section {
   transition: all ease-in-out 0.3s;
   background: #fff;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
-  height: 250px;
+  height: 200px;
   width: 200px;
 }
 
