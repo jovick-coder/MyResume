@@ -68,7 +68,7 @@
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Josiah Victor</h1>
       <p>
-        I'm
+        I'm a
         <span class="typed" data-typed-items="Developer , Designer , Freelancer"></span>
       </p>
       <div class="social-links">
@@ -88,14 +88,13 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>About</h2>
-          <p>
+          <!-- <p>
             I am a front end developer with over 3 years experience. Worked
             with many teams on various projects, contributed to bigger
-            projects on open source, <br />
-            Spent time and resources to develop my skills And will be
-            expecting a job from you. <br />
-            Never to fall you Thanks
-          </p>
+            projects on open source.
+
+
+          </p> -->
         </div>
 
         <div class="row">
@@ -104,44 +103,42 @@
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Website Developer.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p>
+              I am a developer with dip skill of flexibility, with the
+              ability to learn unlearn and relearn.Experienced in
+              problem-solving. With my fast learning
+              ability I can attend to any problem.With quality Knowlege on graphic design.
+              I developed myself in problem-solving not
+              just writing codes 'that is my advantage'. I grow up in my field
+              as a designer and a problem solver, that is what made me a
+              developer.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>Birthday:</strong> 12 Apral
-                  </li>
-                  <!-- <li>
-                      <i class="icofont-rounded-right"></i>
-                      <strong>Website:</strong> www.example.com
-                    </li> -->
-                  <li>
-                    <i class="icofont-rounded-right"></i>
-                    <strong>Phone:</strong> +234 813 729 7150
+                    <strong>Birthday:</strong> 12 April
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>City:</strong> Abuja, Nigeria
+                    <strong>Phone:</strong> +234 813-729-7150
+                  </li>
+                  <li>
+                    <i class="icofont-rounded-right"></i>
+                    <strong>City:</strong> FCT Abuja, Nigeria
                   </li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <!-- <li>
-                      <i class="icofont-rounded-right"></i>
-                      <strong>Age:</strong> 30
-                    </li> -->
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>Degree:</strong> Master
+                    <strong>Degree:</strong> National Diploma
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>PhEmailone:</strong>victorjosiahm3@gmail.come
+                    <strong>Email:</strong>victorjosiahm3@gmail.com
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
@@ -150,20 +147,6 @@
                 </ul>
               </div>
             </div>
-            <p>
-              I am a developer with dip skill of flexibility, which is the
-              ability to learn unlearn and relearn. The main knowledge is
-              problem-solving which involves finding a problem, knowing the
-              problem, and solving the problem. I think that is what made me a
-              developer not just knowing how to code. With my fast learning
-              ability, I can attend to any problem, learn any needed
-              technology (if needed) and solve the problem. I am a graphic
-              designer then chose to build my design skill on a website.
-              Design is my skill. I developed myself in problem-solving not
-              just writing codes 'that is my advantage'. I grow up in my field
-              as a designer and a problem solver, that is what made me a
-              developer.
-            </p>
           </div>
         </div>
       </div>
@@ -175,10 +158,10 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Facts</h2>
-          <p>
+          <!-- <p>
             I have worked with many teams on various projects, contributed to
             bigger projects on open source.
-          </p>
+          </p> -->
         </div>
 
         <div class="row">
@@ -201,7 +184,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">500</span>
+              <span data-toggle="counter-up">100</span>
               <p>Hours Of Support</p>
             </div>
           </div>
@@ -223,12 +206,10 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Skills</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-            quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-            Quia fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+          <!-- <p>
+            Spent time and resources to develop my skills And will be
+            expecting a job from you.
+          </p> -->
         </div>
 
         <div class="row skills-content">
@@ -288,90 +269,72 @@
     </section>
     <!-- End Skills Section -->
 
+    <style>
+      #expand-check-box {
+        display: none;
+      }
+
+      #expand-check-box:checked~.resume {
+        height: auto;
+      }
+
+      .resume {
+        height: 700px;
+        /* border-bottom: rgb(4 100 190) solid; */
+        /* overflow-y: scroll; */
+        position: relative;
+        transition: all ease-in-out .5s;
+      }
+
+      @media screen and (max-width:991px) {
+        .resume {
+          height: 1000px;
+        }
+
+      }
+
+      .resume .expand-btn {
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        background-color: rgb(4, 100, 190, 80%);
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all ease-in-out .5s;
+      }
+
+      .resume .expand-btn:hover {
+        background-color: rgb(4, 100, 190)
+      }
+
+      .resume .expand-btn::before {
+        content: 'Expand >>>';
+      }
+
+      #expand-check-box:checked~.resume .expand-btn::before {
+        content: 'Collaps <<<';
+
+      }
+    </style>
+
     <!-- ======= Resume Section ======= -->
+    <input type="checkbox" name="" id="expand-check-box">
     <section id="resume" class="resume">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Resume</h2>
-          <p>
+          <!-- <p>
             Highly effective at developing and standardizing designs according
             to company brand and objective. Ready to bring years of related
             experiences to a growthoriented team. Experienced working with
             teams to produce impactful, leadingedge websites engage customers
             and deliver business results. Well-versed in design standards and
             user preferences
-          </p>
+          </p> -->
         </div>
 
         <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Front End Developer</h4>
-              <h5>09-2021 - 11-2021</h5>
-
-              <p><em> Legacy Private School Madalla - Abuja, Nigeria.</em></p>
-              <p>
-                <b>Technologies:</b> React js, React Bootstrap, Html, CSS,
-                JavaScript
-              </p>
-              <p>
-                ~ I designed a school website making use css animations And so
-                many other css libraries. The school was so impressed with my
-                work that they have to retain me and employ part time has
-                their ICT instructor for their students. Currently working on
-                their result management system which will be a great
-                achievement in my programming field
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Front End Developer</h4>
-              <h5>04-2021- 06-2021</h5>
-
-              <p><em> LASCARH Company, Abuja, Nigeria.</em></p>
-              <p>
-                <b>Technologies:</b> React js, React Bootstrap, Html, CSS,
-                JavaScript, Bootstrap5
-              </p>
-              <p>
-                ~ Redesigned a website using reactjs. convection of an already
-                designed website to react was an experience i never imagined
-                before it came it, i was in my early time of learning reactjs
-                when this came and it helped my learning faster and gave me
-                more reason to make research, read a lot of books online and
-                also asked for help from my developer friends. Getting the job
-                done was my main aim, which i did. It was a great improvement
-                on my knowledge.
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Front End Designer</h4>
-              <h5>03-2020 - 04-2020</h5>
-
-              <p><em> Palmanovas, Bida Nigeria.</em></p>
-              <p><b>Technologies:</b> Html5, CSS3, JavaScript, Bootstrap5</p>
-              <p>
-                ~ Designed a full investment website. Form the login page to
-                the dashboard and every other page required, this was a great
-                upgrade after my last project. It was a full website so I was
-                in a team. With a react developer converting the other
-                developers. It was an upgrade to my past knowledge.
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Front End Designer</h4>
-              <h5>02-2019- 04-2019</h5>
-
-              <p><em> LASCARH Company, Abuja, Nigeria.</em></p>
-              <p><b>Technologies:</b> Html, CSS, Bootstrap5, JavaScript</p>
-              <p>
-                ~ Design the company official website, it was my first job so
-                I was facing a real-life challenge in website designing, I
-                finished up in less than a month with the help of my
-                problem-solving skills and also my co developers.
-              </p>
-            </div>
-          </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Sumary</h3>
             <div class="resume-item pb-0">
@@ -383,9 +346,9 @@
                   final, polished deliverable.</em>
               </p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>Gwagwalada, FCT Abuja, Nigeria</li>
+                <li>+234 813-729-7150</li>
+                <li>victorjosiahm3@gmail.com</li>
               </ul>
             </div>
 
@@ -427,22 +390,65 @@
                 </p> -->
             </div>
           </div>
+
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Front End Developer</h4>
+              <h5>09-2021 - 11-2021</h5>
+
+              <p><em> Legacy Private School Madalla - Abuja, Nigeria.</em></p>
+              <p>
+                <b>Technologies:</b> React js, React Bootstrap, Html, CSS,
+                JavaScript
+              </p>
+              <p>
+                ~ I designed a school website making use css animations And so
+                many other css libraries. The school was so impressed with my
+                work that they have to retain me and employ part time has
+                their ICT instructor for their students. Currently working on
+                their result management system which will be a great
+                achievement in my programming field
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Front End Developer</h4>
+              <h5>04-2021- 06-2021</h5>
+
+              <p><em> LASCARH Company, Abuja, Nigeria.</em></p>
+              <p>
+                <b>Technologies:</b> React js, React Bootstrap, Html, CSS,
+                JavaScript, Bootstrap5
+              </p>
+              <p>
+                ~ Redesigned a website using reactjs. convection of an already
+                designed website to react was an experience i never imagined
+                before it came it, i was in my early time of learning reactjs
+                when this came and it helped my learning faster and gave me
+                more reason to make research, read a lot of books online and
+                also asked for help from my developer friends. Getting the job
+                done was my main aim, which i did. It was a great improvement
+                on my knowledge.
+              </p>
+            </div>
+
+          </div>
         </div>
       </div>
+      <a href="#">See All...</a> <br>
+      <label for="expand-check-box" class="expand-btn"></label>
+
     </section>
     <!-- End Resume Section -->
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-            quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-            Quia fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+          <!-- <p>
+            Experienced working with teams to produce impactful, leadingedge websites engage customers and deliver
+            business results
+          </p> -->
         </div>
 
         <div class="row">
@@ -687,6 +693,7 @@
           <!-- Project card ends -->
 
         </div>
+
     </section>
     <!-- End Portfolio Section -->
 
@@ -695,12 +702,10 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Services</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-            quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-            Quia fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+          <!-- <p>
+            Highly effective at developing and standardizing designs according
+            to company brand and objective
+          </p> -->
         </div>
 
         <!-- more divs -->
